@@ -50,16 +50,16 @@ In general, entries that are displayed close together on the plot tend to be in 
 These four clusters represent very different visions of how the final episodes will play out. As the deadpool progresses, I suspect that most of the leaders will come from a single one of these clusters with the winner being determined by bonus points. In order to get a better sense of what makes the clusters different, let's examine each cluster's most distinctive picks on who will live and die; i.e. which picks were the most different from the overall average.
 
 <center>
-<img src="plots/Cluster%20Distinctiveness.png" alt="no cap" width="750" />
+<img src="plots/Cluster%20Distinctiveness.png" alt="no cap" width="500" />
 
 </center>
-\*Cluster 1: some real hot takes here. There's only three entries in this cluster, so the data is pretty thin. This is also the cluster that's most different from the overall average. Dany & Tyrion die but The Mountain lives? Nice try Cluster 1, thanks for the $$$!
+-   **Cluster 1:** some real hot takes here. There's only three entries in this cluster, so the data is pretty thin. This is also the cluster that's most different from the overall average. Dany & Tyrion die but The Mountain lives? Nice try Cluster 1, thanks for the $$$!
 
-\*Cluster 2: if I were still in Marketing, I might call this the "girl power" cluster. Very bold picks to have the warriors Yara and Brienne live while Bran "Don't call me Bran" Stark gets the axe.
+-   **Cluster 2:** if I were still in Marketing, I might call this the "girl power" cluster. Very bold picks to have the warriors Yara and Brienne live while Bran "Don't call me Bran" Stark gets the axe.
 
-\*Cluster 3: this cluster is closest to the overall average of all entries, perhaps that gives it the best chance of producing a winner? A version of Westeros where Arya & Jon both die would be fitting for a show like this.
+-   **Cluster 3:** this cluster is closest to the overall average of all entries, perhaps that gives it the best chance of producing a winner? A version of Westeros where Arya & Jon both die would be fitting for a show like this.
 
-\*Cluster 4: a bit of a mixed bag here. Beric Dondarrion makes a surprising appearance to stay alive, but that's because only a single entry had him living and that entry is in this cluster. Overall, this cluster is not too different from average.
+-   **Cluster 4:** a bit of a mixed bag here. Beric Dondarrion makes a surprising appearance to stay alive, but that's because only a single entry had him living and that entry is in this cluster. Overall, this cluster is not too different from average.
 
 Next Steps
 ----------
