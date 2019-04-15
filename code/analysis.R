@@ -112,9 +112,29 @@ entries %>%
         legend.position = "none") + 
   scale_y_continuous(breaks = seq(-10, 10, 10)) +
   scale_x_continuous(breaks = seq(-10, 10, 10)) + 
-  labs(title = "Game of Game of Thrones",
-       subtitle = "How similar were the picks of who will live and who die?\nColors indicate 'clusters' of individuals with similar picks.")
+  labs(title = "Similarity of picks to live/die",
+       subtitle = "Colors indicate 'clusters' of individuals with similar picks")
 ggsave("plots/Pick Similarity.png", width = 11, height = 8, dpi = 300)
+
+
+#plot entries by first two princomp with no clusters
+entries %>% 
+  arrange(Entry) %>% 
+  mutate(cluster = km$cluster,
+         pc1 = pc$scores[, 1],
+         pc2 = pc$scores[, 2],
+         Name = str_replace(Entry, " ", "\n")) %>% 
+  ggplot(aes(pc1, pc2)) + 
+  geom_label_repel(aes(label = Name), force = 0.1, fill = "grey20",
+                   color = "white", segment.color = "black", size = 3, fontface = "bold") + 
+  theme_fivethirtyeight() + 
+  theme(axis.text = element_blank(),
+        legend.position = "none") + 
+  scale_y_continuous(breaks = seq(-10, 10, 10)) +
+  scale_x_continuous(breaks = seq(-10, 10, 10)) + 
+  labs(title = "Similarity of picks to live/die",
+       subtitle = "x and y are the first two principal components from all 24 character selections\nThis is a 2d projection of our 24d data")
+ggsave("plots/Pick Similarity No Cluster.png", width = 11, height = 8, dpi = 300)
 
 #read in the images of all characters in Surprises
 for(i in seq_len(nrow(Surprises))){
@@ -173,10 +193,8 @@ char %>%
   theme_fivethirtyeight() + 
   scale_y_continuous(labels = scales::percent) + 
   theme(panel.grid.major.y = element_blank(),
-        axis.title = element_text(face = "bold"),
-        axis.title.y = element_blank(),
+        axis.title = element_blank(),
         axis.text.y = element_blank()) + 
   labs(title = "Cersei's in trouble...",
-       subtitle = "%of people who guessed the character would die",
-       x = "Death  Rate")
+       subtitle = "%of people who guessed the character would die")
 ggsave("plots/Death Rate.png", width = 6, height = 4, dpi = 600)
