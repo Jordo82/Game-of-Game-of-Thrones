@@ -113,7 +113,7 @@ entries %>%
   scale_y_continuous(breaks = seq(-10, 10, 10)) +
   scale_x_continuous(breaks = seq(-10, 10, 10)) + 
   labs(title = "Game of Game of Thrones",
-       subtitle = "How similar were your picks of who will live and who die?\nColors indicate 'clusters' of individuals with similar picks.")
+       subtitle = "How similar were the picks of who will live and who die?\nColors indicate 'clusters' of individuals with similar picks.")
 ggsave("plots/Pick Similarity.png", width = 11, height = 8, dpi = 300)
 
 #read in the images of all characters in Surprises
@@ -156,7 +156,7 @@ tibble(xmin = -2:1, xmax = -1:2, ymin = rep(-3, 4), ymax = rep(3, 4), cluster = 
              aes(x, y, label = paste0("Cluster ", 1:4), fill = cluster), 
              fontface = "bold", color = "white") + 
   geom_text(data = tibble(x = rep(-2.1, 2), y = c(-1.5, 1.5)),
-            aes(x, y, label = c("Live", "Die")), fontface = "bold", angle = 90, size = 10)
+            aes(x, y, label = c("Alive", "Dead")), fontface = "bold", angle = 90, size = 10)
 ggsave("plots/Cluster Distinctiveness.png", height = 8, width = 6, dpi = 300)
 
 
@@ -177,6 +177,6 @@ char %>%
         axis.title.y = element_blank(),
         axis.text.y = element_blank()) + 
   labs(title = "Cersei's in trouble...",
-       subtitle = "%Of people who guessed the character would die",
-       x = "Death Rate")
+       subtitle = "%of people who guessed the character would die",
+       x = "Death  Rate")
 ggsave("plots/Death Rate.png", width = 6, height = 4, dpi = 600)
