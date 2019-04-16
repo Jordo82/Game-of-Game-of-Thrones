@@ -24,7 +24,7 @@ Similarity of Picks
 
 Looking over the entries, I noticed a lot of variations in people's choices. Some thought Jon Snow would live while Daenerys would die, some thought the opposite. Other than Cersei's death, there was no concensus among the entries.
 
-I wanted to visualize how similar or different each of the entries were from each other. Given that we have 24 different characters, I'd need a 24-dimensional plot in order to make the visualization accurate. I don't even have a 3d printer, so we're going to turn to [Principal Component Analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis) instead. PCA looks for correlations in the data and uses those to reduce the dimensionality still keeping some of the "signal". Think of it like a shadow: a shadow doesn't give us the full picture of whatever cast it, but it can be used to make an informed estimate. Let's look at the two-dimensional shadow of our 24-dimensional data.
+I wanted to visualize how similar or different each of the entries were from each other. Given that we have 24 different characters, I'd need a 24-dimensional plot in order to make the visualization accurate. I don't even have a 3d printer, so we're going to turn to [Principal Component Analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis) instead. PCA looks for correlations in the data and uses those to reduce the dimensionality while still keeping some of the "signal". Think of it like a shadow: a shadow doesn't give us the full picture of whatever cast it, but it can be used to make an informed estimate. Let's look at the two-dimensional shadow of our 24-dimensional data.
 
 <img src="plots/Pick%20Similarity%20No%20Cluster.png" alt="no cap" width="750" />
 
@@ -57,3 +57,8 @@ Next Steps
 ----------
 
 I may revist this as the season unfolds to see how the points get distributed; what were the most obvious "free points" and what did nobody see coming? There's also an interesting(?) discussion on maximizing the expected value of picks, given that you can get up to 3 points for picking someone as dead vs only a single point for alive.
+
+GoT Questions?
+--------------
+
+Confused about the difference between Principal Component Analysis and Cluster Analysis? Wondering whether these techniques can be applied to something other than analyzing a TV show? [Email me](mailto:jordan.upton@hartfordfunds.com?subject=GoT)
